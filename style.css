@@ -118,8 +118,10 @@ button {
     transition: background-color 0.2s ease;
 }
 
-.node.start-node { background-color: var(--node-start); border: none; }
-.node.end-node { background-color: var(--node-end); border: none; }
+.node.start-node { background-color: var(--node-start); border: none; cursor: grab; }
+.node.start-node:active { cursor: grabbing; }
+.node.end-node { background-color: var(--node-end); border: none; cursor: grab; }
+.node.end-node:active { cursor: grabbing; }
 .node.wall-node { background-color: var(--node-wall); border: none; transform: scale(1.1); }
 .node.visited-node { 
     background-color: var(--node-visited); 
