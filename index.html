@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Pathfinding Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Pathfinding Visualizer</div>
+        <div class="controls">
+            <select id="algorithm">
+                <option value="dijkstra">Dijkstra's Algorithm</option>
+                <option value="bfs">Breadth-First Search (BFS)</option>
+                <option value="dfs">Depth-First Search (DFS)</option>
+            </select>
+            <button id="visualizeBtn" class="primary-btn">Visualize Path</button>
+            <button id="clearBoardBtn" class="secondary-btn">Clear Board</button>
+        </div>
+    </header>
+    <main>
+        <div class="legend">
+            <div class="legend-item"><div class="node start-node"></div> Start Node</div>
+            <div class="legend-item"><div class="node end-node"></div> End Node</div>
+            <div class="legend-item"><div class="node wall-node"></div> Wall Node</div>
+            <div class="legend-item"><div class="node visited-node" style="animation:none; background-color: var(--node-visited);"></div> Visited Node</div>
+            <div class="legend-item"><div class="node path-node" style="animation:none; background-color: var(--node-path);"></div> Shortest Path</div>
+        </div>
+        <div id="grid" class="grid"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
