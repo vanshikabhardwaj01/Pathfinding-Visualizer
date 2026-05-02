@@ -1,5 +1,7 @@
 # Algorithmic Pathfinding Visualizer 🚀
 
+**[🌐 View Live Demo Here](https://vanshikabhardwaj01.github.io/Pathfinding-Visualizer/)**
+
 > An interactive web application to visualize complex graph algorithms like Dijkstra's, BFS, and DFS in real-time.
 
 ## 🌟 Features
